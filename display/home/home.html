@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
-<body> 
+
+<body>
     <div id="header">
         <div class="container-fluid">
 
@@ -21,20 +23,24 @@
                 <div class="col-3">
                     <div class="logo-fixer">
                         <a href="./home.html" class="logo-text">
-                          <span>Quest</span><span>2Dev</span>
-                        </a>  
-                      </div>
+                            <span>Quest</span><span>2Dev</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="searching">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                          </div>
+                        <form onsubmit="event.preventDefault();" class="search-form">
+                            <label for="search" class="screen-reader-text">Search</label>
+                            <input id="search" type="search" class="search-input" placeholder="Find something here...">
+                            <button class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
                     </div>
                 </div>
                 <div class="col-3">
-
+                    <div class="btn-group btn-group-login" role="group" aria-label="Basic example">
+                        <button type="button" class=" btn-login ">Log In</button>
+                        <button type="button" class=" btn-login ">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,4 +50,5 @@
 <script src="./js/home.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script src="../fontawesome/js/all.min.js"></script>
+
 </html>
